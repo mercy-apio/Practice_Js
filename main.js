@@ -67,3 +67,76 @@ let giveName = "Outa";
 const fullName = surname + " " + giveName;
 const nameStatment = "My name is" + " "   + surname + " " + giveName;
 console.log(fullName);
+
+//Conditional Statements
+let score;
+score = 45;
+// let condition = score > 50;
+if (score >= 50) {
+    // code to be executed if code is true
+    console.log("you have passed!");
+} else {
+    // code to be executed if condition is false
+    console.log("you failed!");
+} 
+
+//comparison operators
+//Equal tp (==) and strict equal to (===)
+let value;
+value = "19";
+if (value === 10){
+    console.log("value is exactly 10");// this will not execute
+}
+if (value == 10) {
+    console.log("true, they are equal")
+}
+
+// not equal to (!=) and strict not Equal to(!==)
+let val;
+if (val != "20") {
+    console.log("True, they are not equal"); //this will not execute
+}
+
+if (val !== "20") {
+    console.log("true, they are not equal");
+}
+
+//more than two conditions
+let num;
+num = 75;
+if (num >= 95) {
+    console.log("Grade A");
+}else if (num >= 85) {
+    console.log("Grade B");
+}else if (num >= 75) {
+    console.log("Grade C");
+} else {
+    console.log("you have totally failed!!!");
+}
+
+//functions
+// functions Declareation
+function functionName() {
+    console.log("This is a function declaration");
+}
+
+// call the function
+functionName(); //call the function
+
+// Function with Parameters
+function greet(name,) {
+    console.log("Hello, How are you " + name + "?");
+}
+greet("Mercy");
+greet("Martha");
+greet("Lucy");
+greet("mummy");
+greet("Gianna");
+
+// function with return value
+function add(a, b) {
+    returna + b;
+}
+console.log(add(2 ,3));
+console
+.log(add(10, 20));
