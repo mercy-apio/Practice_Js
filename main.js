@@ -135,8 +135,83 @@ greet("Gianna");
 
 // function with return value
 function add(a, b) {
-    returna + b;
+    return a + b;
 }
 console.log(add(2 ,3));
 console
 .log(add(10, 20));
+
+//Arrow Function
+const multiply = function(x, y) {
+    return x*y;
+}
+//Or using E56 arrow function syntax
+const arrowfunc = () => {
+    console.log("This is an arrow function");
+}
+
+const multiplyArrow = (x, y) => x * y;
+
+console.log(multiply(3, 4));
+console.log("This is the result of arrow function: " + multiplyArrow(3, 4));
+
+//Arrow function with multiple lines
+const complexFunc = (a, b) => {
+    let sum = a + b;
+    let product = a * b;
+    let diff = b - a;
+    return {sum: sum, product: product, difference: diff};
+}
+console.log(complexFunc(5, 6));
+
+//Loops
+// for Loops
+const colors = ["Red", "Orange", "Green", "blue", "Yellow"];
+console.log(colors)
+// methods under arrays i.a push, pop, shift, unshift, length, indexDf, includes, splice
+//Lenth
+console.log(colors.Length) //4
+console.log(colors[1]) // Orange
+console.log(colors[3]) // blue
+
+console.log("Red")
+console.log("Orange")
+console.log("Green")
+console.log("blue")
+console.log("Yellow")
+
+//push
+//colors.push("purple")
+//console.log(colors) //  ["Red", "Orange", "Green", "blue", "Yellow", "purple"]
+
+//pop
+//colors.pop() // removes the last element
+//console.log(colors) //["Red", "Orange", "Green", "blue", "Yellow"]
+ 
+// splice
+colors.splice(0, 1)
+console.log(colors)
+
+// shift
+colors.shift() //Reamoves the first time
+console.log(colors)
+
+//unshift
+colors.unshift("Orange") // adds an element to the beginning of the array
+console.log(colors)
+
+//IndexOf
+let index = colors.indexOf("blue")
+console.log(index)
+colors.splice(index, 1)
+console.log(colors)
+
+
+//Indexing
+
+//using a for loop to iterate through the array
+for (let i = 0; i < colors.length; i++) {
+    console.log("This is from the loop", colors[i]);
+} 
+
+// while Loop 
